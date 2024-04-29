@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Domain.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Domain.Fakes.ShimNameCanNotBeNullOrEmptyException">
+            <summary>Shim type of Domain.NameCanNotBeNullOrEmptyException</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimNameCanNotBeNullOrEmptyException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimNameCanNotBeNullOrEmptyException.#ctor(Domain.NameCanNotBeNullOrEmptyException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Fakes.ShimNameCanNotBeNullOrEmptyException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimNameCanNotBeNullOrEmptyException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimNameCanNotBeNullOrEmptyException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimNameCanNotBeNullOrEmptyException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimNameCanNotBeNullOrEmptyException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimNameCanNotBeNullOrEmptyException.Constructor">
+            <summary>Sets the Shim of NameCanNotBeNullOrEmptyException.NameCanNotBeNullOrEmptyException(NameCanNotBeNullOrEmptyException this)</summary>
+        </member>
+        <member name="T:Domain.Fakes.ShimProduct">
+            <summary>Shim type of Domain.Product</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProduct.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProduct.#ctor(Domain.Product)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Fakes.ShimProduct.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProduct.AllInstances.DefineString">
+            <summary>Sets the Shim of Product.Define(Product this, String name)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProduct.AllInstances.IdGet">
+            <summary>Sets the Shim of Product.get_Id(Product this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProduct.AllInstances.IdSetString">
+            <summary>Sets the Shim of Product.set_Id(Product this, String value)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProduct.AllInstances.NameGet">
+            <summary>Sets the Shim of Product.get_Name(Product this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProduct.AllInstances.NameSetString">
+            <summary>Sets the Shim of Product.set_Name(Product this, String value)</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProduct.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProduct.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProduct.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProduct.Constructor">
+            <summary>Sets the Shim of Product.Product(Product this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProduct.DefineString">
+            <summary>Sets the Shim of Product.Define(Product this, String name)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProduct.IdGet">
+            <summary>Sets the Shim of Product.get_Id(Product this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProduct.IdSetString">
+            <summary>Sets the Shim of Product.set_Id(Product this, String value)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProduct.NameGet">
+            <summary>Sets the Shim of Product.get_Name(Product this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProduct.NameSetString">
+            <summary>Sets the Shim of Product.set_Name(Product this, String value)</summary>
+        </member>
+        <member name="T:Domain.Fakes.ShimProductNameIsNotProperException">
+            <summary>Shim type of Domain.ProductNameIsNotProperException</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProductNameIsNotProperException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProductNameIsNotProperException.#ctor(Domain.ProductNameIsNotProperException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Fakes.ShimProductNameIsNotProperException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProductNameIsNotProperException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProductNameIsNotProperException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductNameIsNotProperException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProductNameIsNotProperException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductNameIsNotProperException.ConstructorString">
+            <summary>Sets the Shim of ProductNameIsNotProperException.ProductNameIsNotProperException(ProductNameIsNotProperException this, String message)</summary>
+        </member>
+        <member name="T:Domain.Fakes.StubIProductRepository">
+            <summary>Stub type of Domain.IProductRepository</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubIProductRepository.#ctor">
+            <summary>Initializes a new instance of type StubIProductRepository</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubIProductRepository.DefineProduct">
+            <summary>Sets the stub of IProductRepository.Define(IProductRepository this, Product product)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubIProductRepository.Domain#IProductRepository#Define(Domain.Product)">
+            <summary>Sets the Stub of IProductRepository.Define(IProductRepository this, Product product)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubIProductRepository.Domain#IProductRepository#Exists(System.String)">
+            <summary>Sets the Stub of IProductRepository.Exists(IProductRepository this, String productName)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubIProductRepository.ExistsString">
+            <summary>Sets the stub of IProductRepository.Exists(IProductRepository this, String productName)</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubIProductRepository.Domain#IProductRepository#UnitOfWork">
+            <summary>Sets the stub of IProductRepository.get_UnitOfWork(IProductRepository this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubIProductRepository.UnitOfWorkGet">
+            <summary>Sets the stub of IProductRepository.get_UnitOfWork(IProductRepository this)</summary>
+        </member>
+        <member name="T:Domain.Fakes.StubIUnitOfWork">
+            <summary>Stub type of Domain.IUnitOfWork</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubIUnitOfWork.#ctor">
+            <summary>Initializes a new instance of type StubIUnitOfWork</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubIUnitOfWork.Commit">
+            <summary>Sets the stub of IUnitOfWork.Commit(IUnitOfWork this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubIUnitOfWork.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose(IDisposable this)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubIUnitOfWork.Domain#IUnitOfWork#Commit">
+            <summary>Sets the Stub of IUnitOfWork.Commit(IUnitOfWork this)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubIUnitOfWork.Domain#IUnitOfWork#Rollback">
+            <summary>Sets the Stub of IUnitOfWork.Rollback(IUnitOfWork this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubIUnitOfWork.Rollback">
+            <summary>Sets the stub of IUnitOfWork.Rollback(IUnitOfWork this)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubIUnitOfWork.System#IDisposable#Dispose">
+            <summary>Sets the Stub of IDisposable.Dispose(IDisposable this)</summary>
+        </member>
+        <member name="T:Domain.Fakes.StubNameCanNotBeNullOrEmptyException">
+            <summary>Stub type of Domain.NameCanNotBeNullOrEmptyException</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubNameCanNotBeNullOrEmptyException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubNameCanNotBeNullOrEmptyException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.Data">
+            <summary>Sets the stub of Exception.get_Data(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.DataGet">
+            <summary>Sets the stub of Exception.get_Data(Exception this)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.GetBaseException">
+            <summary>Sets the Stub of Exception.GetBaseException(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException(Exception this)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the Stub of Exception.GetObjectData(Exception this, SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(Exception this, SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(Exception this, String value)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.InitializeStub">
+            <summary>Initializes a new instance of type StubNameCanNotBeNullOrEmptyException</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.Message">
+            <summary>Sets the stub of Exception.get_Message(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message(Exception this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.Source">
+            <summary>Sets the stub of Exception.get_Source(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(Exception this, String value)</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace(Exception this)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.ToString">
+            <summary>Sets the Stub of Exception.ToString(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubNameCanNotBeNullOrEmptyException.ToString01">
+            <summary>Sets the stub of Exception.ToString(Exception this)</summary>
+        </member>
+        <member name="T:Domain.Fakes.StubProduct">
+            <summary>Stub type of Domain.Product</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProduct.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProduct.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProduct.InitializeStub">
+            <summary>Initializes a new instance of type StubProduct</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProduct.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProduct.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Domain.Fakes.StubProductNameIsNotProperException">
+            <summary>Stub type of Domain.ProductNameIsNotProperException</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductNameIsNotProperException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductNameIsNotProperException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubProductNameIsNotProperException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductNameIsNotProperException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubProductNameIsNotProperException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductNameIsNotProperException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductNameIsNotProperException.Data">
+            <summary>Sets the stub of Exception.get_Data(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductNameIsNotProperException.DataGet">
+            <summary>Sets the stub of Exception.get_Data(Exception this)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductNameIsNotProperException.GetBaseException">
+            <summary>Sets the Stub of Exception.GetBaseException(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductNameIsNotProperException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException(Exception this)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductNameIsNotProperException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the Stub of Exception.GetObjectData(Exception this, SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductNameIsNotProperException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(Exception this, SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductNameIsNotProperException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductNameIsNotProperException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductNameIsNotProperException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(Exception this, String value)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductNameIsNotProperException.InitializeStub">
+            <summary>Initializes a new instance of type StubProductNameIsNotProperException</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductNameIsNotProperException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductNameIsNotProperException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductNameIsNotProperException.Message">
+            <summary>Sets the stub of Exception.get_Message(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductNameIsNotProperException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message(Exception this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductNameIsNotProperException.Source">
+            <summary>Sets the stub of Exception.get_Source(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductNameIsNotProperException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductNameIsNotProperException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(Exception this, String value)</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductNameIsNotProperException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductNameIsNotProperException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace(Exception this)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductNameIsNotProperException.ToString">
+            <summary>Sets the Stub of Exception.ToString(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductNameIsNotProperException.ToString01">
+            <summary>Sets the stub of Exception.ToString(Exception this)</summary>
+        </member>
+    </members>
+</doc>
