@@ -7,4 +7,6 @@ public interface IProductRepository
     public Task<bool> Exists(string productName);
 
     public Task<string> Define(Product product);
+
+    public Task<Product> Get(string id);
 }

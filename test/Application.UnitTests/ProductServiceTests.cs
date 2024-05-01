@@ -12,11 +12,11 @@ public class ProductServiceTests
         // Arrange
         var mockedRepository = new Mock<IProductRepository>();
         var productService = new ProductService(mockedRepository.Object);
-        var command = new DefineProduct(name: "IPhone13");
+        var command = new DefineProductCommand(name: "IPhone13");
         mockedRepository.Setup(r => r.Exists(command.Name)).ReturnsAsync(false);
         mockedRepository.SetupGet(r => r.UnitOfWork).Returns(new Mock<IUnitOfWork>().Object);
         // Act
-        Func<Task> actual = async () => await productService.Define(command);
+        Func<Task> actual = async () => await productService.DefineProduct(command);
 
         // Act and Assert
         try
@@ -28,17 +28,18 @@ public class ProductServiceTests
             Assert.True(false, $"Unexpected exception: {ex.Message}");
         }
     }
+
     [Fact]
     public void Defining_Product_With_Duplicate_Name_Should_Fail()
     {
         // Arrange
         var mockRepository = new Mock<IProductRepository>();
         var productService = new ProductService(mockRepository.Object);
-        var command = new DefineProduct(name: "IPhone13");
+        var command = new DefineProductCommand(name: "IPhone13");
         mockRepository.Setup(r => r.Exists(command.Name)).ReturnsAsync(true); 
 
         // Act
-        Func<Task> actual = async () => await productService.Define(command);
+        Func<Task> actual = async () => await productService.DefineProduct(command);
         
         // Assert
         Assert.ThrowsAsync<ProductWithTheSameNameHasBeenAlreadyDefinedException>(actual);

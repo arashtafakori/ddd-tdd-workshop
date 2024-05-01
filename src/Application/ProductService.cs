@@ -10,7 +10,7 @@ public class ProductService : IProductService
     {
         _repository = repository;
     }
-    public async Task<string> Define(DefineProduct command)
+    public async Task<string> DefineProduct(DefineProductCommand command)
     {
         if(await _repository.Exists(command.Name))
             throw new ProductWithTheSameNameHasBeenAlreadyDefinedException();
@@ -22,6 +22,17 @@ public class ProductService : IProductService
         await _repository.UnitOfWork.Commit();
 
         return projectId;
+    }
+
+    public async Task<ProductViewModel> GetProduct(string productId)
+    {
+        var product = await _repository.Get(productId);
+
+        return new ProductViewModel
+        {
+            Id = product.Id,
+            Name = product.Name!
+        };
     }
 }
 

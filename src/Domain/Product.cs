@@ -5,6 +5,16 @@ public class Product
     public string Id { get; private set; }
     public string? Name { get; private set; }
 
+    public Product()
+    {
+    }
+
+    public Product(string id, string? name)
+    {
+        Id = id;
+        Name = name;
+    }
+
     public Product Define(string? name)
     {
         Name = name;

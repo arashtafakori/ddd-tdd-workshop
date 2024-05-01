@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Persistence.MsSqlEFCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3494843ac0a856a8eb0acbad08be4f459f41ea09")]
 [assembly: System.Reflection.AssemblyProductAttribute("Persistence.MsSqlEFCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Persistence.MsSqlEFCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,3 +1,4 @@
+using Azure.Core;
 using Contract;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -19,15 +20,57 @@ namespace Application.IntegrationTests
             IProductService service = _serviceScope!.ServiceProvider.GetRequiredService<IProductService>();
 
             // Arrange
-            var command = new DefineProduct(name: "IPhone16");
+            var productName = "IPhone15";
+            var command = new DefineProductCommand(name: productName);
 
             // Act
-            Func<Task> actual = async () => await service.Define(command);
+            string? productId = null;
+            Func<Task> actual = async () =>
+            {
+                productId = await service.DefineProduct(command);
+            };
 
             // Assert
             try
             {
                 await actual.Invoke();
+
+                var retrievedProduct = await service.GetProduct(productId!);
+
+                Assert.True(productName == retrievedProduct?.Name);
+            }
+            catch (Exception ex)
+            {
+                Assert.True(false, $"Unexpected exception: {ex.Message}");
+            }
+
+            // Tear down
+            _fixture.EnsureRecreatedDatabase();
+        }
+
+        [Fact]
+        public async Task Get_Product_Successfully()
+        {
+            IProductService service = _serviceScope!.ServiceProvider.GetRequiredService<IProductService>();
+
+            // Arrange
+            var productName = "IPhone15";
+            var command = new DefineProductCommand(name: productName);
+            var productId = await service.DefineProduct(command);
+
+            // Act
+
+            ProductViewModel? retrievedProduct = null;
+            Func<Task> actual = async () => {
+                retrievedProduct = await service.GetProduct(productId);
+            };
+
+            // Assert
+            try
+            {
+                await actual.Invoke();
+
+                Assert.True(productName == retrievedProduct?.Name);
             }
             catch (Exception ex)
             {

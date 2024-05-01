@@ -70,6 +70,9 @@
         <member name="P:Domain.Fakes.ShimProduct.Constructor">
             <summary>Sets the Shim of Product.Product(Product this)</summary>
         </member>
+        <member name="P:Domain.Fakes.ShimProduct.ConstructorStringString">
+            <summary>Sets the Shim of Product.Product(Product this, String id, String name)</summary>
+        </member>
         <member name="P:Domain.Fakes.ShimProduct.DefineString">
             <summary>Sets the Shim of Product.Define(Product this, String name)</summary>
         </member>
@@ -127,8 +130,14 @@
         <member name="M:Domain.Fakes.StubIProductRepository.Domain#IProductRepository#Exists(System.String)">
             <summary>Sets the Stub of IProductRepository.Exists(IProductRepository this, String productName)</summary>
         </member>
+        <member name="M:Domain.Fakes.StubIProductRepository.Domain#IProductRepository#Get(System.String)">
+            <summary>Sets the Stub of IProductRepository.Get(IProductRepository this, String id)</summary>
+        </member>
         <member name="F:Domain.Fakes.StubIProductRepository.ExistsString">
             <summary>Sets the stub of IProductRepository.Exists(IProductRepository this, String productName)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubIProductRepository.GetString">
+            <summary>Sets the stub of IProductRepository.Get(IProductRepository this, String id)</summary>
         </member>
         <member name="P:Domain.Fakes.StubIProductRepository.Domain#IProductRepository#UnitOfWork">
             <summary>Sets the stub of IProductRepository.get_UnitOfWork(IProductRepository this)</summary>
@@ -242,6 +251,9 @@
             <summary>Stub type of Domain.Product</summary>
         </member>
         <member name="M:Domain.Fakes.StubProduct.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProduct.#ctor(System.String,System.String)">
             <summary>Initializes a new instance</summary>
         </member>
         <member name="P:Domain.Fakes.StubProduct.CallBase">

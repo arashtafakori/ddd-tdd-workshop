@@ -14,10 +14,16 @@ namespace Presentation.API
             _productService = productService;
         }
 
-        [HttpPost]
-        public async Task<ActionResult<string>> Define(DefineProduct command)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<ProductViewModel>> Get(string id)
         {
-            var id = await _productService.Define(command);
+            return await _productService.GetProduct(id);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<string>> Define(DefineProductCommand command)
+        {
+            var id = await _productService.DefineProduct(command);
             return StatusCode(201, id);
         }
     }

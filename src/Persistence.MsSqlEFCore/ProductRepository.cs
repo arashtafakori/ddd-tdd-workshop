@@ -31,4 +31,14 @@ public class ProductRepository : IProductRepository
     {
         return _dbContext.Products.Where(p => p.Name == productName).AnyAsync();
     }
+
+    public async Task<Product> Get(string id)
+    {
+        var retrievedItem = await _dbContext.Products
+            .Where(p => p.Id == id).FirstOrDefaultAsync();
+
+        return new Product(
+            id: retrievedItem!.Id,
+            name: retrievedItem.Name);
+    }
 }
