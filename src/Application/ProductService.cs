@@ -16,7 +16,7 @@ public class ProductService : IProductService
             throw new ProductWithTheSameNameHasBeenAlreadyDefinedException();
 
         var product = new Product()
-            .Define(name: command.Name);
+            .Define(name: command.Name, new ProductPrice(command.Price));
 
         var projectId = await _repository.Define(product);
         await _repository.UnitOfWork.Commit();
@@ -31,7 +31,8 @@ public class ProductService : IProductService
         return new ProductViewModel
         {
             Id = product.Id,
-            Name = product.Name!
+            Name = product.Name!,
+            Price = product.Price.Value
         };
     }
 }

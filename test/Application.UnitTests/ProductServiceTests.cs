@@ -12,7 +12,7 @@ public class ProductServiceTests
         // Arrange
         var mockedRepository = new Mock<IProductRepository>();
         var productService = new ProductService(mockedRepository.Object);
-        var command = new DefineProductCommand(name: "IPhone13");
+        var command = new DefineProductCommand(name: "IPhone13", price: 1000);
         mockedRepository.Setup(r => r.Exists(command.Name)).ReturnsAsync(false);
         mockedRepository.SetupGet(r => r.UnitOfWork).Returns(new Mock<IUnitOfWork>().Object);
         // Act
@@ -35,7 +35,7 @@ public class ProductServiceTests
         // Arrange
         var mockRepository = new Mock<IProductRepository>();
         var productService = new ProductService(mockRepository.Object);
-        var command = new DefineProductCommand(name: "IPhone13");
+        var command = new DefineProductCommand(name: "IPhone13", price: 1000);
         mockRepository.Setup(r => r.Exists(command.Name)).ReturnsAsync(true); 
 
         // Act

@@ -43,8 +43,8 @@
         <member name="T:Domain.Fakes.ShimProduct.AllInstances">
             <summary>Define shims for all instances members</summary>
         </member>
-        <member name="P:Domain.Fakes.ShimProduct.AllInstances.DefineString">
-            <summary>Sets the Shim of Product.Define(Product this, String name)</summary>
+        <member name="P:Domain.Fakes.ShimProduct.AllInstances.DefineStringProductPrice">
+            <summary>Sets the Shim of Product.Define(Product this, String name, ProductPrice price)</summary>
         </member>
         <member name="P:Domain.Fakes.ShimProduct.AllInstances.IdGet">
             <summary>Sets the Shim of Product.get_Id(Product this)</summary>
@@ -58,6 +58,12 @@
         <member name="P:Domain.Fakes.ShimProduct.AllInstances.NameSetString">
             <summary>Sets the Shim of Product.set_Name(Product this, String value)</summary>
         </member>
+        <member name="P:Domain.Fakes.ShimProduct.AllInstances.PriceGet">
+            <summary>Sets the Shim of Product.get_Price(Product this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProduct.AllInstances.PriceSetProductPrice">
+            <summary>Sets the Shim of Product.set_Price(Product this, ProductPrice value)</summary>
+        </member>
         <member name="M:Domain.Fakes.ShimProduct.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
         </member>
@@ -70,11 +76,8 @@
         <member name="P:Domain.Fakes.ShimProduct.Constructor">
             <summary>Sets the Shim of Product.Product(Product this)</summary>
         </member>
-        <member name="P:Domain.Fakes.ShimProduct.ConstructorStringString">
-            <summary>Sets the Shim of Product.Product(Product this, String id, String name)</summary>
-        </member>
-        <member name="P:Domain.Fakes.ShimProduct.DefineString">
-            <summary>Sets the Shim of Product.Define(Product this, String name)</summary>
+        <member name="P:Domain.Fakes.ShimProduct.DefineStringProductPrice">
+            <summary>Sets the Shim of Product.Define(Product this, String name, ProductPrice price)</summary>
         </member>
         <member name="P:Domain.Fakes.ShimProduct.IdGet">
             <summary>Sets the Shim of Product.get_Id(Product this)</summary>
@@ -82,11 +85,20 @@
         <member name="P:Domain.Fakes.ShimProduct.IdSetString">
             <summary>Sets the Shim of Product.set_Id(Product this, String value)</summary>
         </member>
+        <member name="P:Domain.Fakes.ShimProduct.InstantiateStringStringProductPrice">
+            <summary>Sets the Shim of Product.Instantiate(String id, String name, ProductPrice price)</summary>
+        </member>
         <member name="P:Domain.Fakes.ShimProduct.NameGet">
             <summary>Sets the Shim of Product.get_Name(Product this)</summary>
         </member>
         <member name="P:Domain.Fakes.ShimProduct.NameSetString">
             <summary>Sets the Shim of Product.set_Name(Product this, String value)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProduct.PriceGet">
+            <summary>Sets the Shim of Product.get_Price(Product this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProduct.PriceSetProductPrice">
+            <summary>Sets the Shim of Product.set_Price(Product this, ProductPrice value)</summary>
         </member>
         <member name="T:Domain.Fakes.ShimProductNameIsNotProperException">
             <summary>Shim type of Domain.ProductNameIsNotProperException</summary>
@@ -114,6 +126,96 @@
         </member>
         <member name="P:Domain.Fakes.ShimProductNameIsNotProperException.ConstructorString">
             <summary>Sets the Shim of ProductNameIsNotProperException.ProductNameIsNotProperException(ProductNameIsNotProperException this, String message)</summary>
+        </member>
+        <member name="T:Domain.Fakes.ShimProductPrice">
+            <summary>Shim type of Domain.ProductPrice</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProductPrice.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProductPrice.#ctor(Domain.ProductPrice)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Fakes.ShimProductPrice.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPrice.AllInstances.EqualsObject">
+            <summary>Sets the Shim of ProductPrice.Equals(ProductPrice this, Object obj)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPrice.AllInstances.EqualsProductPrice">
+            <summary>Sets the Shim of ProductPrice.Equals(ProductPrice this, ProductPrice other)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPrice.AllInstances.GetHashCode01">
+            <summary>Sets the Shim of ProductPrice.GetHashCode(ProductPrice this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPrice.AllInstances.ToString01">
+            <summary>Sets the Shim of ProductPrice.ToString(ProductPrice this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPrice.AllInstances.Validate">
+            <summary>Sets the Shim of ProductPrice.Validate(ProductPrice this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPrice.AllInstances.ValueGet">
+            <summary>Sets the Shim of ProductPrice.get_Value(ProductPrice this)</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProductPrice.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProductPrice.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPrice.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProductPrice.Bind(System.IEquatable{Domain.ProductPrice})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPrice.ConstructorDecimal">
+            <summary>Sets the Shim of ProductPrice.ProductPrice(ProductPrice this, Decimal price)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPrice.EqualsObject">
+            <summary>Sets the Shim of ProductPrice.Equals(ProductPrice this, Object obj)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPrice.EqualsProductPrice">
+            <summary>Sets the Shim of ProductPrice.Equals(ProductPrice this, ProductPrice other)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPrice.GetHashCode">
+            <summary>Sets the Shim of ProductPrice.GetHashCode(ProductPrice this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPrice.ToString">
+            <summary>Sets the Shim of ProductPrice.ToString(ProductPrice this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPrice.Validate">
+            <summary>Sets the Shim of ProductPrice.Validate(ProductPrice this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPrice.ValueGet">
+            <summary>Sets the Shim of ProductPrice.get_Value(ProductPrice this)</summary>
+        </member>
+        <member name="T:Domain.Fakes.ShimProductPriceCanNotBeNegativeException">
+            <summary>Shim type of Domain.ProductPriceCanNotBeNegativeException</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProductPriceCanNotBeNegativeException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProductPriceCanNotBeNegativeException.#ctor(Domain.ProductPriceCanNotBeNegativeException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Fakes.ShimProductPriceCanNotBeNegativeException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProductPriceCanNotBeNegativeException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProductPriceCanNotBeNegativeException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPriceCanNotBeNegativeException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Fakes.ShimProductPriceCanNotBeNegativeException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Fakes.ShimProductPriceCanNotBeNegativeException.Constructor">
+            <summary>Sets the Shim of ProductPriceCanNotBeNegativeException.ProductPriceCanNotBeNegativeException(ProductPriceCanNotBeNegativeException this)</summary>
         </member>
         <member name="T:Domain.Fakes.StubIProductRepository">
             <summary>Stub type of Domain.IProductRepository</summary>
@@ -253,9 +355,6 @@
         <member name="M:Domain.Fakes.StubProduct.#ctor">
             <summary>Initializes a new instance</summary>
         </member>
-        <member name="M:Domain.Fakes.StubProduct.#ctor(System.String,System.String)">
-            <summary>Initializes a new instance</summary>
-        </member>
         <member name="P:Domain.Fakes.StubProduct.CallBase">
             <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
         </member>
@@ -344,6 +443,120 @@
             <summary>Sets the Stub of Exception.ToString(Exception this)</summary>
         </member>
         <member name="F:Domain.Fakes.StubProductNameIsNotProperException.ToString01">
+            <summary>Sets the stub of Exception.ToString(Exception this)</summary>
+        </member>
+        <member name="T:Domain.Fakes.StubProductPrice">
+            <summary>Stub type of Domain.ProductPrice</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductPrice.#ctor(System.Decimal)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductPrice.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductPrice.Equals(System.Object)">
+            <summary>Sets the Stub of ProductPrice.Equals(ProductPrice this, Object obj)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductPrice.EqualsObject">
+            <summary>Sets the stub of ProductPrice.Equals(ProductPrice this, Object obj)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductPrice.GetHashCode">
+            <summary>Sets the Stub of ProductPrice.GetHashCode(ProductPrice this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductPrice.GetHashCode01">
+            <summary>Sets the stub of ProductPrice.GetHashCode(ProductPrice this)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductPrice.InitializeStub">
+            <summary>Initializes a new instance of type StubProductPrice</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductPrice.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductPrice.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductPrice.ToString">
+            <summary>Sets the Stub of ProductPrice.ToString(ProductPrice this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductPrice.ToString01">
+            <summary>Sets the stub of ProductPrice.ToString(ProductPrice this)</summary>
+        </member>
+        <member name="T:Domain.Fakes.StubProductPriceCanNotBeNegativeException">
+            <summary>Stub type of Domain.ProductPriceCanNotBeNegativeException</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductPriceCanNotBeNegativeException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductPriceCanNotBeNegativeException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubProductPriceCanNotBeNegativeException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductPriceCanNotBeNegativeException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubProductPriceCanNotBeNegativeException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductPriceCanNotBeNegativeException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductPriceCanNotBeNegativeException.Data">
+            <summary>Sets the stub of Exception.get_Data(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductPriceCanNotBeNegativeException.DataGet">
+            <summary>Sets the stub of Exception.get_Data(Exception this)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductPriceCanNotBeNegativeException.GetBaseException">
+            <summary>Sets the Stub of Exception.GetBaseException(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductPriceCanNotBeNegativeException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException(Exception this)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductPriceCanNotBeNegativeException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the Stub of Exception.GetObjectData(Exception this, SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductPriceCanNotBeNegativeException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of Exception.GetObjectData(Exception this, SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductPriceCanNotBeNegativeException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductPriceCanNotBeNegativeException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductPriceCanNotBeNegativeException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(Exception this, String value)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductPriceCanNotBeNegativeException.InitializeStub">
+            <summary>Initializes a new instance of type StubProductPriceCanNotBeNegativeException</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductPriceCanNotBeNegativeException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductPriceCanNotBeNegativeException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductPriceCanNotBeNegativeException.Message">
+            <summary>Sets the stub of Exception.get_Message(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductPriceCanNotBeNegativeException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message(Exception this)</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductPriceCanNotBeNegativeException.Source">
+            <summary>Sets the stub of Exception.get_Source(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductPriceCanNotBeNegativeException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductPriceCanNotBeNegativeException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(Exception this, String value)</summary>
+        </member>
+        <member name="P:Domain.Fakes.StubProductPriceCanNotBeNegativeException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductPriceCanNotBeNegativeException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace(Exception this)</summary>
+        </member>
+        <member name="M:Domain.Fakes.StubProductPriceCanNotBeNegativeException.ToString">
+            <summary>Sets the Stub of Exception.ToString(Exception this)</summary>
+        </member>
+        <member name="F:Domain.Fakes.StubProductPriceCanNotBeNegativeException.ToString01">
             <summary>Sets the stub of Exception.ToString(Exception this)</summary>
         </member>
     </members>

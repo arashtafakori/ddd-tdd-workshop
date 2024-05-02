@@ -20,7 +20,7 @@ namespace Presentation.API.IntegrationTests
         {
             // Arrange
             var productName = "Iphone A";
-            var request = new DefineProductCommand(name: productName);
+            var request = new DefineProductCommand(name: productName, price: 1000);
             string jsonProduct = JsonConvert.SerializeObject(request);
 
             // Act
@@ -56,7 +56,7 @@ namespace Presentation.API.IntegrationTests
         {
             // Arrange
             var productName = "Iphone B";
-            var request = new DefineProductCommand(name: productName);
+            var request = new DefineProductCommand(name: productName, price: 1000);
             string jsonProduct = JsonConvert.SerializeObject(request);
 
             // Act

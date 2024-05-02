@@ -21,7 +21,8 @@ public class ProductRepository : IProductRepository
         var productModel = new ProductModel
         {
             Id = Guid.NewGuid().ToString(),
-            Name = product.Name!
+            Name = product.Name!,
+            Price = product.Price.Value
         };
         _dbContext.Products.Add(productModel);
         return await Task.FromResult(productModel.Id);
@@ -37,8 +38,9 @@ public class ProductRepository : IProductRepository
         var retrievedItem = await _dbContext.Products
             .Where(p => p.Id == id).FirstOrDefaultAsync();
 
-        return new Product(
+        return Product.Instantiate(
             id: retrievedItem!.Id,
-            name: retrievedItem.Name);
+            name: retrievedItem.Name,
+            new ProductPrice(retrievedItem.Price));
     }
 }

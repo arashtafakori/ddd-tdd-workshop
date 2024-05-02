@@ -9,7 +9,7 @@ public class ProductTests
         var product = new Product();
 
         // Act
-        product.Define(name: "IPhone13");
+        product.Define(name: "IPhone13", price: new ProductPrice(1000));
 
         // Assert
         Assert.True(true);
@@ -25,7 +25,7 @@ public class ProductTests
         var product = new Product();
 
         // Act
-        Action actual = () => product.Define(name: productName);
+        Action actual = () => product.Define(name: productName, price: new ProductPrice(1000));
 
         // Assert
         Assert.Throws<NameCanNotBeNullOrEmptyException>(actual);
@@ -40,10 +40,23 @@ public class ProductTests
         var product = new Product();
         
         // Act
-        Action actual = () => product.Define(name: productName);
+        Action actual = () => product.Define(name: productName, price: new ProductPrice(1000));
 
         // Assert
         Assert.Throws<ProductNameIsNotProperException>(actual);
+    }
+
+    [Fact]
+    public void Define_ShouldFail_IfProductPriceIsNegative()
+    {
+        // Arrange
+        var product = new Product();
+
+        // Act
+        Action actual = () => product.Define(name: "IPhone13", price: new ProductPrice(-100));
+
+        // Assert
+        Assert.Throws<ProductPriceCanNotBeNegativeException>(actual);
     }
 }
 

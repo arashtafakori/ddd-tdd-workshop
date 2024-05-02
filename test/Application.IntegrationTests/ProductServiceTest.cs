@@ -21,7 +21,7 @@ namespace Application.IntegrationTests
 
             // Arrange
             var productName = "IPhone15";
-            var command = new DefineProductCommand(name: productName);
+            var command = new DefineProductCommand(name: productName, price: 1000);
 
             // Act
             string? productId = null;
@@ -55,7 +55,7 @@ namespace Application.IntegrationTests
 
             // Arrange
             var productName = "IPhone15";
-            var command = new DefineProductCommand(name: productName);
+            var command = new DefineProductCommand(name: productName, price: 1000);
             var productId = await service.DefineProduct(command);
 
             // Act

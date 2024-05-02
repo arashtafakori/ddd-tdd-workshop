@@ -27,7 +27,7 @@ public class UserWantsToDefineAProduct : IClassFixture<ProductFixture>
         var productName = "Iphone15";
 
         // Given
-        var command = new DefineProductCommand(productName);
+        var command = new DefineProductCommand(productName, price: 1000);
 
         // When
         ProductViewModel? retrievedProduct = null;
@@ -60,8 +60,8 @@ public class UserWantsToDefineAProduct : IClassFixture<ProductFixture>
         var productName = "Iphone15";
 
         // Given
-        var command = new DefineProductCommand(productName);
-        await service.DefineProduct(new DefineProductCommand(productName));
+        var command = new DefineProductCommand(productName, price: 1000);
+        await service.DefineProduct(new DefineProductCommand(productName, price: 1000));
 
         // When
         Func<Task> actual = async () => await service.DefineProduct(command);
